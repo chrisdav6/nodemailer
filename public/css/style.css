@@ -1,0 +1,54 @@
+html, body {
+  background: url(../img/bg.jpg) no-repeat;
+  background-position: center center;
+  height: 100%;
+  background-size: cover; }
+
+#logo {
+  padding-top: 20px; }
+  @media (min-width: 992px) {
+    #logo {
+      padding-top: 40px; } }
+  @media (min-width: 1200px) {
+    #logo {
+      padding-top: 80px; } }
+
+#intro p {
+  font-family: "Just Another Hand", cursive;
+  font-size: 1.7em; }
+  @media (min-width: 576px) {
+    #intro p {
+      font-size: 2em; } }
+
+.countdown {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 1.7em; }
+  @media (min-width: 576px) {
+    .countdown {
+      font-size: 3em; } }
+
+.fa {
+  color: #fff;
+  position: relative;
+  top: 0;
+  transition: .3s; }
+
+.fa-facebook-square:hover {
+  top: -5px;
+  color: #3b5998; }
+
+.fa-twitter-square:hover {
+  top: -5px;
+  color: #1DA1F2; }
+
+.fa-google-plus-square:hover {
+  top: -5px;
+  color: #DB4437; }
+
+.fa-instagram:hover {
+  top: -5px;
+  color: #262626; }
+
+form {
+  opacity: 0.8; }

@@ -1,0 +1,87 @@
+<% include ./partials/header %>
+
+  <section id="logo">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col text-center">
+          <img src="img/my-logo.png" class="img-fluid">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="intro" class="pt-4">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col text-center">
+          <p class="text-white mb-0">We're working hard, we'll be ready to launch in...</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="clock">
+    <div class="container">
+      <div class="row text-center text-white">
+        
+        <div class="col">
+          <div class="countdown"></div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="social" class="pt-4">
+    <div class="container">
+      <div class="row text-center text-white">
+        
+        <div class="col">
+          <ul class="list-inline">
+            <li class="list-inline-item mr-4">
+              <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item mr-4">
+              <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item mr-4">
+              <a href="https://plus.google.com/discover" target="_blank"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="signUp">
+    <div class="container">
+      <div class="row pt-4">
+        
+        <div class="col-md-4 mx-auto">
+          
+          <form method="post" action="/">
+            <div class="input-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Sign Up</button>
+              </div>
+            </div>
+          </form>
+          
+          <h3 class="text-white text-center mt-2"><%= msg %></h3>
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<% include ./partials/footer %>
