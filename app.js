@@ -29,23 +29,22 @@ app.post("/", function(req, res){
     <hr>
     <p>From: ${req.body.email} </p>
   `;
-  
-    // create reusable transporter object using the default SMTP transport
-    var transporter = nodemailer.createTransport({
-            service: "Godaddy",
-            auth: {
-            user: "test@thedavisexperiment.com",
-            pass: "test"
-            },
-            tls:{
-                rejectUnauthorized: false
-            }
-      });
+
+    
+    let transporter = nodemailer.createTransport({
+        host: 'relay-hosting.secureserver.net',
+        port: 25,
+        secure: false,
+        auth: {
+            user: "", // generated ethereal user
+            pass: ""  // generated ethereal password
+        }
+    });
 
     // setup email data with unicode symbols
     var mailOptions = {
         from: '"Nodemailer Contact" <test@thedavisexperiment.com>', // sender address
-        to: "test@thedavisexperiment.com", // list of receivers
+        to: "chris.davis5440@gmail.com", // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'I would like to subscibe to your newsletter', // plain text body
         html: output // html body
