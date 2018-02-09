@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
+var port = process.env.PORT || 3000;
 var app = express();
 
 //Use EJS
@@ -63,6 +64,6 @@ app.post("/", function(req, res){
 });
 
 //Start Server
-app.listen(process.env.PORT, process.env.IP, function() {
+app.listen(port, function() {
   console.log("Server has started!"); 
 });
